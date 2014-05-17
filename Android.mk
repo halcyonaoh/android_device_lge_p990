@@ -2,7 +2,7 @@ ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),p990)
 include $(call first-makefiles-under,$(call my-dir))
 endif
 
-ifneq ($(filter p990 p999, $(TARGET_BOOTLOADER_BOARD_NAME)),)
+ifneq ($(filter p990, $(TARGET_BOOTLOADER_BOARD_NAME)),)
 include $(call first-makefiles-under,$(call my-dir))
 
 ## Do not let gapps packages install this. It uses a lot of room,
